@@ -4,7 +4,7 @@ import Notiflix from 'notiflix';
 
 const dataPickerEl = document.querySelector('#datetime-picker');
 const buttonEl = document.querySelector('button');
-const deysEl = document.querySelector('[data-days]');
+const daysEl = document.querySelector('[data-days]');
 const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
@@ -79,7 +79,7 @@ function startTimer() {
 
 function stopTimer() {
   if (
-    (deysEl.textContent === '00') &
+    (daysEl.textContent === '00') &
     (hoursEl.textContent === '00') &
     (minutesEl.textContent === '00') &
     (secondsEl.textContent === '01')
@@ -89,7 +89,7 @@ function stopTimer() {
 }
 
 function updateComponentsTimer({ days, hours, minutes, seconds }) {
-  deysEl.textContent = days.toString();
+  daysEl.textContent = days.toString();
   hoursEl.textContent = hours.toString();
   minutesEl.textContent = minutes.toString();
   secondsEl.textContent = seconds.toString();
