@@ -94,3 +94,4 @@ function updateComponentsTimer({ days, hours, minutes, seconds }) {
   minutesEl.textContent = minutes.toString();
   secondsEl.textContent = seconds.toString();
 }
+
